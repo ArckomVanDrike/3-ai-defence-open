@@ -1,5 +1,7 @@
 # 3AI Defence
 
+![3AI Defence — Distributed Cyber-Defence Architecture](assets/3ai-defence-hero.webp)
+
 ## Distributed Cyber-Defence Architecture
 
 3AI Defence is a distributed cyber-defence architecture built around physical
