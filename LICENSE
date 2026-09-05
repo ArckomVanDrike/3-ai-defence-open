@@ -1,0 +1,116 @@
+3AI Defence Public Repository License
+Version 1.0 — 2026
+
+Copyright (c) 2026.
+All rights reserved.
+
+1. PURPOSE
+
+This repository is publicly accessible for technical evaluation,
+architectural review, research, educational discussion, portfolio
+presentation and interoperability analysis.
+
+Public accessibility does not make this repository open source and does not
+place its contents in the public domain.
+
+2. LIMITED PERMISSION
+
+Subject to this License, permission is granted to:
+
+- view and read the repository;
+- clone it for personal, non-commercial technical evaluation;
+- link to the repository;
+- discuss its publicly documented architecture;
+- quote limited excerpts with appropriate attribution.
+
+3. RESTRICTIONS
+
+Except with prior written permission from the rights holder, you may not:
+
+- use substantial portions of this repository for commercial purposes;
+- sell, sublicense or commercially redistribute repository content;
+- reproduce or redistribute substantial portions of the documentation,
+  diagrams, assets or other materials;
+- create a commercial security product substantially derived from the
+  proprietary materials published here;
+- represent a derivative implementation as an official 3AI Defence product;
+- use project branding in a manner that implies authorization, affiliation or
+  endorsement;
+- use this repository as authorization to access, test or attack private
+  infrastructure.
+
+4. PRIVATE IMPLEMENTATION
+
+This repository does not grant rights to private 3AI Defence technology.
+
+Private components may include:
+
+- production source code;
+- detection logic;
+- integrity monitoring implementation;
+- recovery infrastructure;
+- containment implementation;
+- controlled decoy configuration;
+- model configuration;
+- AI orchestration;
+- private telemetry;
+- incident response logic;
+- production network topology;
+- protected asset inventories;
+- credentials;
+- private APIs;
+- audit infrastructure;
+- CashOut defensive implementation;
+- proprietary security rules.
+
+5. DEFENSIVE SCOPE
+
+Nothing in this License authorizes:
+
+- unauthorized system access;
+- offensive exploitation;
+- malware deployment;
+- credential theft;
+- destructive testing;
+- testing against third-party systems without permission;
+- access to protected infrastructure.
+
+6. INTELLECTUAL PROPERTY
+
+All rights not expressly granted are reserved.
+
+No patent license, trademark license or other intellectual-property license is
+granted except for the limited copyright permissions explicitly stated above.
+
+Publication of architecture, interfaces or concepts does not waive rights in
+private implementations or other protectable subject matter.
+
+7. THIRD-PARTY MATERIAL
+
+Names, trademarks, APIs, datasets, services and technologies belonging to third
+parties remain the property of their respective owners and may be subject to
+separate licenses and terms.
+
+8. NO ENDORSEMENT
+
+References to third-party platforms or technologies do not imply sponsorship,
+partnership or endorsement unless explicitly stated.
+
+9. COMMERCIAL LICENSING
+
+Commercial use, integration rights or broader licensing may be available only
+through a separate written agreement with the rights holder.
+
+10. NO WARRANTY
+
+THE MATERIALS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE RIGHTS HOLDER SHALL NOT BE LIABLE
+FOR CLAIMS, DAMAGES OR OTHER LIABILITY ARISING FROM USE OF THESE MATERIALS.
+
+11. ACCEPTANCE
+
+By exercising permissions granted under this License, you agree to comply with
+its terms.
