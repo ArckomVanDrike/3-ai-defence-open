@@ -177,6 +177,41 @@ Containment Coordination
 
 ---
 
+# Evidence-to-Reconstruction Flow
+
+A coordinated incident investigation can include an explicit reconstruction
+stage before containment or recovery decisions.
+
+```text
+Observe
+   |
+   v
+Preserve Evidence
+   |
+   v
+Build Timeline
+   |
+   v
+Correlate
+   |
+   v
+Separate Facts / Evidence / Hypotheses
+   |
+   v
+Explain Defensive Context
+```
+
+Akali contributes trusted evidence and event context.
+
+Caronte contributes observations from containment and controlled environments.
+
+Outy correlates the available evidence, reconstructs the incident context and
+communicates uncertainty where the evidence is incomplete.
+
+This is an architectural description, not a public incident-response playbook.
+
+---
+
 # Coordination Loop
 
 A simplified defensive loop:
@@ -186,6 +221,9 @@ Observe
    |
    v
 Detect
+   |
+   v
+Preserve / Reconstruct
    |
    v
 Correlate
@@ -399,6 +437,9 @@ This repository may document:
 - human-control concepts
 - revalidation
 - audit principles
+- incident reconstruction
+- evidence provenance
+- uncertainty-aware explanation
 
 It intentionally does not expose:
 

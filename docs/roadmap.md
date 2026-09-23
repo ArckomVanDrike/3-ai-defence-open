@@ -85,6 +85,10 @@ Potential architectural priorities include:
 - recovery validation
 - selective restoration
 - integrity evidence
+- incident-evidence preservation
+- cross-layer event context
+- timeline reconstruction inputs
+- fact / evidence / hypothesis separation
 - resilience under partial failure
 - safer update boundaries
 
@@ -114,6 +118,9 @@ Potential directions include:
 - local defensive reasoning
 - better signal correlation
 - confidence-aware context
+- incident timeline reconstruction
+- operator-readable incident explanation
+- explicit uncertainty and missing-evidence reporting
 - explainable defensive recommendations
 - controlled orchestration
 - improved offline analysis
@@ -148,7 +155,46 @@ Potential focus:
 
 ---
 
-# Phase 7 — Detection to Recovery Lifecycle
+# Phase 7 — Incident Reconstruction Capability
+
+Develop an implementation-neutral incident reconstruction layer across the
+three defensive roles.
+
+Potential priorities include:
+
+- normalized event timelines
+- evidence provenance
+- correlation across operating-system, application, infrastructure and
+  authorized external defensive sources
+- distinction between confirmed facts and hypotheses
+- missing-evidence identification
+- operator-readable incident summaries
+- natural-language investigation interfaces where appropriate
+
+Conceptually:
+
+```text
+Evidence
+   |
+   v
+Timeline
+   |
+   v
+Correlation
+   |
+   v
+Facts / Evidence / Hypotheses
+   |
+   v
+Incident Reconstruction
+```
+
+The public repository will document the architecture while production data
+sources, schemas, reasoning rules and sensitive integrations remain private.
+
+---
+
+# Phase 8 — Detection to Recovery Lifecycle
 
 Expand the complete defensive lifecycle.
 
@@ -172,7 +218,7 @@ The objective is resilience rather than detection alone.
 
 ---
 
-# Phase 8 — Offline-First Maturity
+# Phase 9 — Offline-First Maturity
 
 Continue reducing unnecessary external dependency.
 
@@ -187,7 +233,7 @@ Potential priorities include:
 
 ---
 
-# Phase 9 — Protected Environment Profiles
+# Phase 10 — Protected Environment Profiles
 
 Develop implementation-neutral deployment profiles for authorized environments
 such as:
@@ -204,7 +250,7 @@ production infrastructure.
 
 ---
 
-# Phase 10 — CashOut Maturity
+# Phase 11 — CashOut Maturity
 
 Continue exercising the architecture in the CashOut context.
 
@@ -220,7 +266,7 @@ CashOut remains a protected environment, not the identity of 3AI Defence.
 
 ---
 
-# Phase 11 — Dedicated Hardware Architecture
+# Phase 12 — Dedicated Hardware Architecture
 
 The original 3AI Defence concept is built around physically separated defensive
 roles.
@@ -240,7 +286,7 @@ Private implementation will retain:
 
 ---
 
-# Phase 12 — Resilience Testing
+# Phase 13 — Resilience Testing
 
 Potential future work includes testing:
 
@@ -256,7 +302,7 @@ The objective is to understand system behavior under failure.
 
 ---
 
-# Phase 13 — Audit and Explainability
+# Phase 14 — Audit and Explainability
 
 A defensive system should be reviewable.
 
@@ -272,7 +318,7 @@ Private telemetry and incident data remain private.
 
 ---
 
-# Phase 14 — Human Control
+# Phase 15 — Human Control
 
 Continue defining which actions may be:
 
@@ -286,7 +332,7 @@ High-impact operations should preserve explicit authorization boundaries.
 
 ---
 
-# Phase 15 — Security Intelligence Updates
+# Phase 16 — Security Intelligence Updates
 
 Potential direction includes controlled use of:
 
@@ -299,7 +345,7 @@ External data should cross controlled trust boundaries.
 
 ---
 
-# Phase 16 — Independent Research Surface
+# Phase 17 — Independent Research Surface
 
 As the project becomes more independent, the public repository may include:
 
