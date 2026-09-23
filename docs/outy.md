@@ -44,6 +44,9 @@ At the architectural level, Outy can:
 - detect patterns and anomalies
 - support defensive decisions
 - coordinate responses between modules
+- reconstruct incident timelines from trusted evidence
+- distinguish observed facts from hypotheses
+- support operator queries about what happened and why
 - use local AI where appropriate
 - contribute to learning from previous incidents
 
@@ -72,6 +75,43 @@ Defensive Context
 ```
 
 Correlation is distinct from blindly treating every signal as an incident.
+
+---
+
+# Incident Reconstruction
+
+Outy can correlate evidence preserved by Akali, observations from Caronte and
+other authorized defensive telemetry to reconstruct an incident timeline.
+
+Conceptually:
+
+```text
+Akali Evidence -------+
+                      |
+Caronte Observations -+--> Outy --> Incident Timeline
+                      |              |
+Other Telemetry ------+              +--> Facts
+                                     +--> Evidence
+                                     `--> Hypotheses
+```
+
+The objective is not to force a single explanation.
+
+Where evidence is incomplete, Outy should be able to express uncertainty and
+identify what information is missing.
+
+An operator-facing deployment may support questions such as:
+
+```text
+What happened before the service failed?
+Why did this host restart?
+Which events are confirmed facts?
+Which conclusions are still hypotheses?
+What evidence is missing?
+```
+
+The exact natural-language interface, models and reasoning mechanisms remain
+private.
 
 ---
 
@@ -425,6 +465,8 @@ This repository may document:
 - cooperation with Akali
 - cooperation with Caronte
 - audit principles
+- incident reconstruction concepts
+- uncertainty and evidence provenance
 - human-control concepts
 
 It intentionally does not expose:
@@ -447,3 +489,7 @@ It intentionally does not expose:
 # Design Principle
 
 > **Outy does not replace Akali or Caronte. It gives their separate defensive signals a shared context.**
+
+For incident reconstruction:
+
+> **Akali preserves what happened. Outy explains what it means.**
