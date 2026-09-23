@@ -43,6 +43,8 @@ Akali is responsible at the architectural level for:
 - comparing current state with trusted reference state
 - maintaining trusted recovery material
 - supporting selective restoration
+- preserving incident evidence needed for later reconstruction
+- contributing trusted event context to incident timelines
 - participating in coordinated defensive response
 
 The exact production implementation remains private.
@@ -155,6 +157,49 @@ Return to Trusted Operation
 ```
 
 The exact recovery policy depends on the protected environment.
+
+---
+
+# Incident Evidence and Reconstruction
+
+Akali can preserve and structure evidence needed to reconstruct what happened
+before, during and after an incident.
+
+The objective is not to guess a root cause from one signal. It is to retain
+trusted observations that can later be correlated into a timeline.
+
+Conceptually:
+
+```text
+System / Infrastructure Events
+          |
+          v
+Evidence Capture
+          |
+          v
+        Akali
+          |
+          +--> Timestamped Facts
+          +--> Integrity Context
+          +--> Trusted Evidence
+          `--> Timeline Inputs
+```
+
+Depending on the protected environment, evidence may originate from multiple
+layers such as operating-system state, application telemetry, local
+infrastructure, virtualization, hardware-management interfaces or other
+authorized defensive sources.
+
+Akali does not need to determine final causality by itself.
+
+It should preserve the distinction between:
+
+- observed fact
+- supporting evidence
+- correlated hypothesis
+
+This allows later analysis to remain reviewable and reduces the risk of
+presenting an early plausible explanation as a proven cause.
 
 ---
 
@@ -352,6 +397,9 @@ This repository may document:
 - cooperation with Caronte
 - offline-first design
 - audit principles
+- incident-evidence preservation
+- timeline reconstruction principles
+- fact / evidence / hypothesis separation
 
 It intentionally does not expose:
 
@@ -371,3 +419,7 @@ It intentionally does not expose:
 # Design Principle
 
 > **Recovery is only useful when the state being restored is itself trusted.**
+
+A complementary principle is:
+
+> **Akali preserves what happened. Outy explains what it means.**
